@@ -1,2 +1,5 @@
 .vscode
 env
+*.bak
+*.dat
+*.dir
