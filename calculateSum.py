@@ -1,13 +1,7 @@
-from fileData import *
 import sys
 import os
-from hashFunc import hashFunc
+from hashFunc import *
 import shelve
-
-def assertionTool(val, msg):
-    if not val:
-        print(msg)
-        sys.exit(0)
 
 assertionTool(len(sys.argv) > 1 and sys.argv[1] != "", "Usage: py calculateSum <folder path>")
 
@@ -30,3 +24,8 @@ for folderName, subFolders, files in os.walk(path):
         sh[currentShortFileName] = h
         print(f"{currentShortFileName} : {h}")
         f.close()
+
+if len(sh) == 0:
+    print("No files found in the directory.")
+
+sh.close()
