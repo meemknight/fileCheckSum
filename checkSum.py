@@ -34,7 +34,8 @@ for k, v in sh.items():
             print("file corupted:", k)
         else:
             print("file ok:", k)
-    del readFolders[k]
+            
+        del readFolders[k]
 
 for k, v in readFolders.items():
     print("A new file was added:", k)
