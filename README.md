@@ -1,4 +1,4 @@
-! fileCheckSum
+# fileCheckSum
 
 Usage: 
     * py calculateSum.py folderName -> calculates a hash for each file in that folder 
